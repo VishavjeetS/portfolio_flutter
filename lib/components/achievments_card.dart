@@ -49,11 +49,18 @@ class _AchievmentsCardState extends State<AchievmentsCard> {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: Colors.red),
-                              image: DecorationImage(
-                                  image: AssetImage(widget.icon),
-                                  fit: BoxFit.cover)),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.red),
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(120),
+                            child: Image.asset(
+                              widget.icon,
+                              fit: BoxFit.cover,
+                              height: 120,
+                              width: 120,
+                            ),
+                          ),
                         ),
                       ),
                       const SizedBox(

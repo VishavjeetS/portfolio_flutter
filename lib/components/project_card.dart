@@ -82,15 +82,12 @@ class _ProjectCardState extends State<ProjectCard> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Image(
-                              image: const AssetImage("images/github.png"),
-                              fit: BoxFit.cover,
-                              height: 25,
-                              width: 25,
-                              color: iconColor,
-                            ),
-                          ),
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image.asset("images/github.png",
+                                  fit: BoxFit.cover,
+                                  height: 25,
+                                  width: 25,
+                                  color: iconColor)),
                         ],
                       ),
                       const SizedBox(
