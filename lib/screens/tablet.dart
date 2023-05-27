@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../components/contact_left.dart';
 import '../components/contact_right.dart';
@@ -45,7 +46,10 @@ class _TabletState extends State<Tablet> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                launchUrl(Uri.parse(
+                    "https://drive.google.com/file/d/14WuTThhfETqJB4n6V6eUGsr4YOBF24W4/view?usp=share_link"));
+              },
               style: ButtonStyle(
                   backgroundColor:
                       MaterialStateProperty.all(Colors.transparent),

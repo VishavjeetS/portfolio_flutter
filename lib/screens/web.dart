@@ -4,6 +4,7 @@ import 'package:portfolio/components/contact_right.dart';
 import 'package:portfolio/utils/achievments.dart';
 import 'package:portfolio/utils/projects.dart';
 import 'package:portfolio/utils/home.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../components/nav_items.dart';
 import '../constants/constants.dart';
 import '../utils/about.dart';
@@ -44,7 +45,10 @@ class _WebState extends State<Web> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                launchUrl(Uri.parse(
+                    "https://drive.google.com/file/d/14WuTThhfETqJB4n6V6eUGsr4YOBF24W4/view?usp=share_link"));
+              },
               style: ButtonStyle(
                   backgroundColor:
                       MaterialStateProperty.all(Colors.transparent),
