@@ -36,7 +36,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_nav_bar: ^5.0.6
   timelines: ^0.1.0
-  hover_effect: ^0.6.0
   url_launcher: ^6.1.11
   http: ^0.13.6
 
