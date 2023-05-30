@@ -83,7 +83,7 @@ class _ProjectCardState extends State<ProjectCard> {
                           ),
                           Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.network(
+                              child: Image.asset(
                                 "assets/images/github.png",
                                 fit: BoxFit.cover,
                                 height: 25,
