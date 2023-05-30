@@ -11,7 +11,6 @@ class ContactLeft extends StatefulWidget {
 
 class _ContactLeftState extends State<ContactLeft> {
   void _launchUrl(String url) {
-    print(url);
     launchUrl(Uri.parse(url));
   }
 
@@ -25,7 +24,7 @@ class _ContactLeftState extends State<ContactLeft> {
             _launchUrl(instagramUrl);
           },
           icon: Image.asset(
-            "images/instagram.png",
+            "assets/images/instagram.png",
             color: Colors.white,
           ),
         ),
@@ -37,7 +36,7 @@ class _ContactLeftState extends State<ContactLeft> {
             _launchUrl(linkeDinUrl);
           },
           icon: Image.asset(
-            "images/linkedin.png",
+            "assets/images/linkedin.png",
             color: Colors.white,
           ),
         ),
@@ -49,7 +48,7 @@ class _ContactLeftState extends State<ContactLeft> {
             _launchUrl(gitHubUrl);
           },
           icon: Image.asset(
-            "images/github.png",
+            "assets/images/github.png",
             color: Colors.white,
           ),
         ),

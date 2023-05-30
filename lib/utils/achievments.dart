@@ -66,13 +66,13 @@ class AchievmentsState extends State<Achievments> {
           height: 40,
         ),
         width < tablet
-            ? Column(
-                children: const [
+            ? const Column(
+                children: [
                   AchievmentsCard(
                       title: "Machine Learning",
                       description: "Machine Learning Advanced Training",
                       source: "SimpliLearn",
-                      icon: "images/simp.png"),
+                      icon: "assets/images/simp.png"),
                   SizedBox(
                     height: 30,
                   ),
@@ -80,24 +80,24 @@ class AchievmentsState extends State<Achievments> {
                       title: "Data Science",
                       description: "Data Science with R",
                       source: "Udemy",
-                      icon: "images/udemy.jpeg")
+                      icon: "assets/images/udemy.jpeg")
                 ],
               )
-            : SingleChildScrollView(
+            : const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     AchievmentsCard(
                         title: "Machine Learning",
                         description: "Machine Learning Advanced Trainnig",
                         source: "SimpliLearn",
-                        icon: "images/simp.png"),
+                        icon: "assets/images/simp.png"),
                     AchievmentsCard(
                         title: "Data Science",
                         description: "Data Science with R",
                         source: "Udemy",
-                        icon: "images/udemy.jpeg")
+                        icon: "assets/images/udemy.jpeg")
                   ],
                 ),
               ),
