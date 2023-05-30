@@ -84,7 +84,7 @@ class _ProjectCardState extends State<ProjectCard> {
                           Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Image.network(
-                                "https://github.com/VishavjeetS/portfolio_flutter/blob/flutter_app/assets/images/github.png",
+                                "assets/images/github.png",
                                 fit: BoxFit.cover,
                                 height: 25,
                                 width: 25,
