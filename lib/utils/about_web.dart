@@ -109,24 +109,24 @@ class _AboutWebState extends State<AboutWeb> {
                           ),
                           SizedBox(
                             width: MediaQuery.of(context).size.width / 4,
-                            child: Column(
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
-                                  children: const [
+                                  children: [
                                     Skills(skill: "Flutter"),
                                     Skills(skill: "Android"),
                                   ],
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   height: 10,
                                 ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
-                                  children: const [
+                                  children: [
                                     Skills(skill: "Java"),
                                     Skills(skill: "MySQL")
                                   ],
@@ -207,6 +207,9 @@ class _AboutWebState extends State<AboutWeb> {
                     itemCount: list.length,
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 60,
               ),
             ],
           ),

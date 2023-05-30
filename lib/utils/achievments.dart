@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../components/achievments_card.dart';
 
 class Achievments extends StatefulWidget {
@@ -66,34 +67,50 @@ class AchievmentsState extends State<Achievments> {
           height: 40,
         ),
         width < tablet
-            ? const Column(
+            ? Column(
                 children: [
                   AchievmentsCard(
+                      onTap: () {
+                        launchUrl(Uri.parse(
+                            "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
+                      },
                       title: "Machine Learning",
                       description: "Machine Learning Advanced Training",
                       source: "SimpliLearn",
                       icon: "assets/images/simp.png"),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   AchievmentsCard(
+                      onTap: () {
+                        launchUrl(Uri.parse(
+                            "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
+                      },
                       title: "Data Science",
                       description: "Data Science with R",
                       source: "Udemy",
                       icon: "assets/images/udemy.jpeg")
                 ],
               )
-            : const SingleChildScrollView(
+            : SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     AchievmentsCard(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
+                        },
                         title: "Machine Learning",
                         description: "Machine Learning Advanced Trainnig",
                         source: "SimpliLearn",
                         icon: "assets/images/simp.png"),
                     AchievmentsCard(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
+                        },
                         title: "Data Science",
                         description: "Data Science with R",
                         source: "Udemy",

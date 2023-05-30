@@ -204,6 +204,9 @@ class _AboutMobileState extends State<AboutMobile> {
                 ),
               ),
             ),
+            const SizedBox(
+              height: 20,
+            ),
           ],
         ),
       ],

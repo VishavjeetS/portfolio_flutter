@@ -5,12 +5,14 @@ import "../constants/constants.dart";
 class ProjectCard extends StatefulWidget {
   final String title, description, footer;
   final bool isSelected;
+  final VoidCallback onTap;
   const ProjectCard({
     super.key,
     required this.title,
     required this.description,
     required this.isSelected,
     required this.footer,
+    required this.onTap,
   });
 
   @override
@@ -25,7 +27,7 @@ class _ProjectCardState extends State<ProjectCard> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onTap,
       onHover: (value) {
         setState(() {
           value
@@ -89,13 +91,7 @@ class _ProjectCardState extends State<ProjectCard> {
                                 height: 25,
                                 width: 25,
                                 color: iconColor,
-                              )
-                              // Image.asset("images/github.png",
-                              //     fit: BoxFit.cover,
-                              //     height: 25,
-                              //     width: 25,
-                              //     color: iconColor)
-                              ),
+                              )),
                         ],
                       ),
                       const SizedBox(

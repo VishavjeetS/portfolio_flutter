@@ -25,6 +25,8 @@ class _WebState extends State<Web> {
     final projectKey = GlobalKey(debugLabel: "project");
     final contactKey = GlobalKey(debugLabel: "contact");
 
+    final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: primaryColor,
@@ -106,9 +108,9 @@ class _WebState extends State<Web> {
                       aboutKey: aboutKey,
                     ),
 
-                    const SizedBox(
-                      height: 60,
-                    ),
+                    // const SizedBox(
+                    //   height: 60,
+                    // ),
 
                     const Achievments(),
 

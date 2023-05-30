@@ -3,12 +3,14 @@ import 'package:portfolio/constants/constants.dart';
 
 class AchievmentsCard extends StatefulWidget {
   final String title, description, source, icon;
+  final VoidCallback onTap;
   const AchievmentsCard(
       {super.key,
       required this.title,
       required this.description,
       required this.source,
-      required this.icon});
+      required this.icon,
+      required this.onTap});
 
   @override
   State<AchievmentsCard> createState() => _AchievmentsCardState();
@@ -20,7 +22,7 @@ class _AchievmentsCardState extends State<AchievmentsCard> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onTap,
       onHover: (value) {
         setState(() {
           isHovering = true;
