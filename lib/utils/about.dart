@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/components/education._card.dart';
 import 'package:portfolio/utils/about_tablet.dart';
 import 'package:portfolio/utils/about_web.dart';
-import 'package:timelines/timelines.dart';
-
-import '../components/aboutText.dart';
-import '../components/skills.dart';
 import '../constants/constants.dart';
 import 'about_mobile.dart';
 
