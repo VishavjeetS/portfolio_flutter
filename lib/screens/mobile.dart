@@ -36,8 +36,8 @@ class _MobileState extends State<Mobile> {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 Text(
                   "<",
                   style: TextStyle(
@@ -70,7 +70,7 @@ class _MobileState extends State<Mobile> {
             child: TextButton(
               onPressed: () {
                 launchUrl(Uri.parse(
-                    "https://drive.google.com/file/d/14WuTThhfETqJB4n6V6eUGsr4YOBF24W4/view?usp=share_link"));
+                    "https://drive.google.com/file/d/1KuXKvGvnVTieZ6x2shcpSX6g2Fpl7z7Y/view?usp=sharing"));
               },
               style: ButtonStyle(
                   backgroundColor:

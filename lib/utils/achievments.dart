@@ -66,58 +66,60 @@ class AchievmentsState extends State<Achievments> {
         const SizedBox(
           height: 40,
         ),
-        width < tablet
-            ? Column(
-                children: [
-                  AchievmentsCard(
-                      onTap: () {
-                        launchUrl(Uri.parse(
-                            "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
-                      },
-                      title: "Machine Learning",
-                      description: "Machine Learning Advanced Training",
-                      source: "SimpliLearn",
-                      icon: "assets/images/simp.png"),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  AchievmentsCard(
-                      onTap: () {
-                        launchUrl(Uri.parse(
-                            "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
-                      },
-                      title: "Data Science",
-                      description: "Data Science with R",
-                      source: "Udemy",
-                      icon: "assets/images/udemy.jpeg")
-                ],
-              )
-            : SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    AchievmentsCard(
-                        onTap: () {
-                          launchUrl(Uri.parse(
-                              "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
-                        },
-                        title: "Machine Learning",
-                        description: "Machine Learning Advanced Trainnig",
-                        source: "SimpliLearn",
-                        icon: "assets/images/simp.png"),
-                    AchievmentsCard(
-                        onTap: () {
-                          launchUrl(Uri.parse(
-                              "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
-                        },
-                        title: "Data Science",
-                        description: "Data Science with R",
-                        source: "Udemy",
-                        icon: "assets/images/udemy.jpeg")
-                  ],
-                ),
+        if (width < tablet)
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              AchievmentsCard(
+                  onTap: () {
+                    launchUrl(Uri.parse(
+                        "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
+                  },
+                  title: "Machine Learning",
+                  description: "Machine Learning Advanced Training",
+                  source: "SimpliLearn",
+                  icon: "assets/images/simp.png"),
+              const SizedBox(
+                height: 30,
               ),
+              AchievmentsCard(
+                  onTap: () {
+                    launchUrl(Uri.parse(
+                        "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
+                  },
+                  title: "Data Science",
+                  description: "Data Science with R",
+                  source: "Udemy",
+                  icon: "assets/images/udemy.jpeg")
+            ],
+          )
+        else
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                AchievmentsCard(
+                    onTap: () {
+                      launchUrl(Uri.parse(
+                          "https://drive.google.com/file/d/1a6LrvH7Bq2O7IpRtbB13bPGfj1wwblgJ/view?usp=share_link"));
+                    },
+                    title: "Machine Learning",
+                    description: "Machine Learning Advanced Trainnig",
+                    source: "SimpliLearn",
+                    icon: "assets/images/simp.png"),
+                AchievmentsCard(
+                    onTap: () {
+                      launchUrl(Uri.parse(
+                          "https://drive.google.com/file/d/10PBII2qnLacLcYtKtvHC1IFG0vqYEr80/view?usp=share_link"));
+                    },
+                    title: "Data Science",
+                    description: "Data Science with R",
+                    source: "Udemy",
+                    icon: "assets/images/udemy.jpeg")
+              ],
+            ),
+          ),
         SizedBox(
           height: width < tablet ? 20 : 40,
         )

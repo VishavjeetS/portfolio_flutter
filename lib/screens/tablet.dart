@@ -48,7 +48,7 @@ class _TabletState extends State<Tablet> {
             child: TextButton(
               onPressed: () {
                 launchUrl(Uri.parse(
-                    "https://drive.google.com/file/d/14WuTThhfETqJB4n6V6eUGsr4YOBF24W4/view?usp=share_link"));
+                    "https://drive.google.com/file/d/1KuXKvGvnVTieZ6x2shcpSX6g2Fpl7z7Y/view?usp=sharing"));
               },
               style: ButtonStyle(
                   backgroundColor:
