@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:timelines/timelines.dart';
 
 import '../components/aboutText.dart';
-import '../components/education._card.dart';
 import '../components/skills.dart';
-import '../constants/constants.dart';
 
 class AboutTablet extends StatefulWidget {
   const AboutTablet({super.key});
