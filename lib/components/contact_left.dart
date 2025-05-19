@@ -26,6 +26,8 @@ class _ContactLeftState extends State<ContactLeft> {
           icon: Image.asset(
             "assets/images/instagram.png",
             color: Colors.white,
+            height: 25,
+            width: 25,
           ),
         ),
         const SizedBox(
@@ -38,6 +40,8 @@ class _ContactLeftState extends State<ContactLeft> {
           icon: Image.asset(
             "assets/images/linkedin.png",
             color: Colors.white,
+            height: 25,
+            width: 25,
           ),
         ),
         const SizedBox(
@@ -50,6 +54,8 @@ class _ContactLeftState extends State<ContactLeft> {
           icon: Image.asset(
             "assets/images/github.png",
             color: Colors.white,
+            height: 25,
+            width: 25,
           ),
         ),
         const SizedBox(
