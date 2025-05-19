@@ -135,80 +135,80 @@ class _AboutMobileState extends State<AboutMobile> {
             ),
           ],
         ),
-        const SizedBox(
-          height: 40,
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: Row(
-                children: [
-                  Container(
-                    width: 25,
-                    height: 25,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white.withOpacity(0.8),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        '2',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w200,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text(
-                    "Education",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w500),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  SizedBox(
-                    width: 150,
-                    child: Divider(
-                      color: Colors.white.withOpacity(0.8),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height / 1.8,
-              width: MediaQuery.of(context).size.width,
-              child: Timeline.tileBuilder(
-                builder: TimelineTileBuilder.fromStyle(
-                  contentsAlign: ContentsAlign.alternating,
-                  contentsBuilder: (context, index) {
-                    final detail = list[index];
-                    return Education(
-                        title: detail[0],
-                        university: detail[1],
-                        batch: detail[2]);
-                  },
-                  itemCount: list.length,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-          ],
-        ),
+        // const SizedBox(
+        //   height: 40,
+        // ),
+        // Column(
+        //   crossAxisAlignment: CrossAxisAlignment.center,
+        //   children: [
+        //     Padding(
+        //       padding: const EdgeInsets.only(left: 20.0),
+        //       child: Row(
+        //         children: [
+        //           Container(
+        //             width: 25,
+        //             height: 25,
+        //             decoration: BoxDecoration(
+        //               shape: BoxShape.circle,
+        //               color: Colors.white.withOpacity(0.8),
+        //             ),
+        //             child: const Center(
+        //               child: Text(
+        //                 '2',
+        //                 style: TextStyle(
+        //                     fontSize: 20,
+        //                     fontWeight: FontWeight.w200,
+        //                     color: Colors.black),
+        //               ),
+        //             ),
+        //           ),
+        //           const SizedBox(
+        //             width: 10,
+        //           ),
+        //           const Text(
+        //             "Education",
+        //             style: TextStyle(
+        //                 color: Colors.white,
+        //                 fontSize: 25,
+        //                 fontWeight: FontWeight.w500),
+        //           ),
+        //           const SizedBox(
+        //             width: 10,
+        //           ),
+        //           SizedBox(
+        //             width: 150,
+        //             child: Divider(
+        //               color: Colors.white.withOpacity(0.8),
+        //             ),
+        //           )
+        //         ],
+        //       ),
+        //     ),
+        //     const SizedBox(
+        //       height: 20,
+        //     ),
+        //     SizedBox(
+        //       height: MediaQuery.of(context).size.height / 1.8,
+        //       width: MediaQuery.of(context).size.width,
+        //       child: Timeline.tileBuilder(
+        //         builder: TimelineTileBuilder.fromStyle(
+        //           contentsAlign: ContentsAlign.alternating,
+        //           contentsBuilder: (context, index) {
+        //             final detail = list[index];
+        //             return Education(
+        //                 title: detail[0],
+        //                 university: detail[1],
+        //                 batch: detail[2]);
+        //           },
+        //           itemCount: list.length,
+        //         ),
+        //       ),
+        //     ),
+        //     const SizedBox(
+        //       height: 20,
+        //     ),
+        //   ],
+        // ),
       ],
     );
   }

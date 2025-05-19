@@ -29,7 +29,7 @@ class AchievmentsState extends State<Achievments> {
                 ),
                 child: const Center(
                   child: Text(
-                    '3',
+                    '2',
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w200,
