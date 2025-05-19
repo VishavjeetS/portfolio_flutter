@@ -70,7 +70,7 @@ class _MobileState extends State<Mobile> {
             child: TextButton(
               onPressed: () {
                 launchUrl(Uri.parse(
-                    "https://drive.google.com/file/d/1KuXKvGvnVTieZ6x2shcpSX6g2Fpl7z7Y/view?usp=sharing"));
+                    "https://drive.google.com/file/d/1c5HqWtuH4fl2rJ-spSNZkv0ips02kv5v/view?usp=sharing"));
               },
               style: ButtonStyle(
                   backgroundColor:
@@ -80,7 +80,7 @@ class _MobileState extends State<Mobile> {
                       borderRadius: BorderRadius.all(Radius.circular(10))))),
               child: const Center(
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.symmetric(horizontal: 8.0),
                   child: Text(
                     "Resume",
                     style: TextStyle(
